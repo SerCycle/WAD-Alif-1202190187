@@ -67,7 +67,7 @@ $tempat = [
                     <div class="card shadow-sm rounded" >
                         <img src="<?php echo $tempat[0]["img"];?>" alt="">
                         <div class="m-3">
-                            <p class="m-0" style="font-size: 20px"><?php echo $tempat[]["gdg"];?></p>
+                            <p class="m-0" style="font-size: 20px"><?php echo $tempat[0]["gdg"];?></p>
                             <p class="m-0" style="color: grey">$<?php echo $tempat[0]["yar"];?> / Hour</p>
                             <p class="m-0" style="color: grey"><?php echo $tempat[0]["cap"];?> Capacity</p>
                         </div>
