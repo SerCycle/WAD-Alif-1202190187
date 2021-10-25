@@ -22,7 +22,7 @@ $tempat = [
     ],
 ];
 
-$event = $_POST["event"]." ".$_POST["time"];
+$event = $_POST["even"]." ".$_POST["time"];
 $starev = date("d-m-Y H:i", strtotime($event));
 $endev = date("d-m-Y H:i", strtotime($event)+60*60*$_POST["jam"]);
 $gedung = $_POST["gedung"];
