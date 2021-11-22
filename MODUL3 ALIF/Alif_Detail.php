@@ -1,11 +1,11 @@
 <?php
 $valuename = "Alif_1202190187";
 
-$koneksisql = mysqli_connect("localhost", "root", "", "modul3");
+$koneksql = mysqli_connect("localhost:3316", "root", "", "modul3");
 $judul = $_GET["judul"];
 $query = "SELECT * FROM buku_table WHERE judul_buku ='$judul'";
 
-$conquery = mysqli_query($konekssql, $query);
+$conquery = mysqli_query($koneksql, $query);
 $sort = mysqli_fetch_assoc($conquery);
 $idbook = $sort['id_buku'];
 $tag = $sort['tag'];
@@ -185,9 +185,9 @@ if (isset($_POST["submit"])){
         bahasa = '$bahasa'
         WHERE id_buku = $idbook
     ";
-    mysqli_query($koneksisql, $query);
+    mysqli_query($koneksql, $query);
     
-    if (mysqli_affected_rows($koneksisql) > 0) {
+    if (mysqli_affected_rows($koneksql) > 0) {
         echo "
         <script>
             alert('Data berhasil diubah');

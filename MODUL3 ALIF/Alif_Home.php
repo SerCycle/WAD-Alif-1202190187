@@ -2,7 +2,7 @@
 
 $valuename = "Alif_1202190187";
 
-$koneksql = mysqli_connect("localhost", "root", "", "modu3");
+$koneksql = mysqli_connect("localhost:3316", "root", "", "modul3");
 
 ?>
 

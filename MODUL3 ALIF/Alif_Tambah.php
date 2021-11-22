@@ -109,9 +109,9 @@ $valuename = "Alif_1202190187";
 
 <?php
 
-$koneksql = mysqli_connect("localhost", "root", "", "modul3");
+$koneksql = mysqli_connect("localhost:3316", "root", "", "modul3");
 
-if (isset($_POST["sbmit"])){
+if (isset($_POST["submit"])){
     $judul = $_POST["judul"];
     $penulis = $_POST["penulis"];
     $tahun = $_POST["tahun"];
