@@ -1,5 +1,5 @@
 <?php
-$koneksql = mysqli_connect("localhost:3316", "root", "", "modul3");
+$koneksql = mysqli_connect("localhost", "root", "", "modul3");
 $judul = $_GET["judul"];
 
 $query = "DELETE FROM buku_table WHERE judul_buku = '$judul'";

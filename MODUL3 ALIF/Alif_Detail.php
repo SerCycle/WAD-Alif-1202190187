@@ -1,11 +1,11 @@
 <?php
 $valuename = "Alif_1202190187";
 
-$koneksisql = mysqli_connect("localhost:3316", "root", "", "modul3");
+$koneksisql = mysqli_connect("localhost", "root", "", "modul3");
 $judul = $_GET["judul"];
 $query = "SELECT * FROM buku_table WHERE judul_buku ='$judul'";
 
-$conquery = mysqli_query($koneksisql, $query);
+$conquery = mysqli_query($konekssql, $query);
 $sort = mysqli_fetch_assoc($conquery);
 $idbook = $sort['id_buku'];
 $tag = $sort['tag'];
