@@ -87,6 +87,7 @@ if(isset($_COOKIE["id"])){ // jika login menggunakan cookie
                 berhasil.style.display = 'block'
             </script>
             ";
+            unset($_SESSION["newlogin"]);
         } else{
             echo "
             <script>

@@ -15,8 +15,6 @@ session_start();
         <title>Login</title>
     </head>
     <body class="bg-warning bg-opacity-10">
-        
-        <!-- Navbar -->
         <div class="container-fluid bg-primary bg-opacity-50 sticky-top">
             <div class="container p-2 navbar navbar-collapse" >
                 <a class="link-dark" href="index.php" style="text-decoration: none;"><b>EAD Travel</b></a>
@@ -27,7 +25,6 @@ session_start();
             </div> 
         </div>
 
-        <!-- Alert Jika abis log out -->
         <?php
         if (isset($_SESSION["keluar"])){
             ?>
@@ -40,7 +37,6 @@ session_start();
             }
         ?>
 
-        <!-- Alert ketika setelah regis -->
         <div class="alert alert-success alert-dismissible fade show" id="alertberhasil">
             Berhasil registrasi
             <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
@@ -62,18 +58,11 @@ session_start();
         }
         ?>
 
-        <!-- ALert gagal login -->
         <div class="alert alert-danger alert-dismissible fade show" id="alertgagal">
             Gagal Login
             <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
         </div>
 
-        <script>
-            var gagal = document.getElementById('alertgagal');
-            gagal.style.display = 'none'
-        </script>
-
-        <!-- Form Login -->
         <div class="d-flex container mt-5 justify-content-center">
             <div class="card rounded-1 bg-white" style="width: 24rem;">
                 <h3 class="text-center m-3">Login</h3>
@@ -109,7 +98,10 @@ session_start();
 
         <!-- Option 1: Bootstrap Bundle with Popper -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-        
+        <script>
+            var gagal = document.getElementById('alertgagal');
+            gagal.style.display = 'none'
+        </script>
 
     </body>
 </html>
