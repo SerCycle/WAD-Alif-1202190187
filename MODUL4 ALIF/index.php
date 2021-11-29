@@ -3,14 +3,14 @@ session_start();
 if(isset($_COOKIE["id"])){ // jika login menggunakan cookie
     $_SESSION["login"] = true;
     $id = $_COOKIE["id"];
-    $koneksql = mysqli_connect("localhost:3316", "root", "", "wad_modul4");
+    $koneksql = mysqli_connect("localhost", "root", "", "wad_modul4");
     $qakun = "SELECT * FROM user WHERE id ='$id'";
     $getakun = mysqli_query($koneksql, $qakun);
     $sort = mysqli_fetch_assoc($getakun);
     $nama = $sort["nama"];
 }elseif(isset($_SESSION["sementara"])){ // jika login biasa
     $id = $_SESSION["sementara"];
-    $koneksql = mysqli_connect("localhost:3316", "root", "", "wad_modul4");
+    $koneksql = mysqli_connect("localhost", "root", "", "wad_modul4");
     $qakun = "SELECT * FROM user WHERE id ='$id'";
     $getakun = mysqli_query($koneksql, $qakun);
     $sort = mysqli_fetch_assoc($getakun);

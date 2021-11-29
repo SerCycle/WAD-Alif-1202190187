@@ -1,5 +1,5 @@
 <?php
-session_start();
+session();
 ?>
 
 <!doctype html>
@@ -107,7 +107,7 @@ session_start();
 </html>
 
 <?php
-$koneksql = mysqli_connect("localhost:3316", "root", "", "wad_modul4");
+$koneksql = mysqli_connect("localhost", "root", "", "wad_modul4");
 
 if (isset($_POST["submit"])){
     $email = $_POST["email"];

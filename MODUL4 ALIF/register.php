@@ -75,7 +75,7 @@ session_start();
 </html>
 
 <?php
-$koneksql = mysqli_connect("localhost:3316", "root", "", "wad_modul4");
+$koneksql = mysqli_connect("localhost", "root", "", "wad_modul4");
 
 if (isset($_POST["submit"])){
     if (($_POST["pass"]) == ($_POST["repass"])){
@@ -89,7 +89,7 @@ if (isset($_POST["submit"])){
         ";
         mysqli_query($koneksql, $query);
         if (mysqli_affected_rows($koneksql) > 0) {
-            $_SESSION["sukses"] = "berhasil";
+            $SESSION["sukses"] = "berhasil";
             echo "
             <script>
                 document.location.href = './login.php';

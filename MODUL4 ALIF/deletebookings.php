@@ -1,6 +1,6 @@
 <?php
 session_start();
-$koneksql = mysqli_connect("localhost:3316", "root", "", "wad_modul4");
+$koneksql = mysqli_connect("localhost", "root", "", "wad_modul4");
 $id = $_GET["id"];
 
 $query = "DELETE FROM booking WHERE id = '$id'";
