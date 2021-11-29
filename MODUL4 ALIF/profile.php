@@ -1,7 +1,7 @@
 <?php
-session_start()
+session_start();
 $id = $_GET["id"];
-$koneksql = mysqli_connect("localhost", "root", "", "wad_modul4");
+$koneksql = mysqli_connect("localhost:3316", "root", "", "wad_modul4");
 $qakun = "SELECT * FROM user WHERE id ='$id'";
 $getakun = mysqli_query($koneksql, $qakun);
 $sort = mysqli_fetch_assoc($getakun);
