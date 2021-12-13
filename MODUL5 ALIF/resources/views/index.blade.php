@@ -1,6 +1,6 @@
 @extends('layout.layout')
 
-@section('isi')
+@setion('isi')
     <h2 class="text-center p-5">About Us</h2>
 
     <div class="container d-flex justify-content-around align-items-center">
