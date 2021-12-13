@@ -5,7 +5,7 @@
     <h1 class="text-center p-5">Input Vaccine</h1>
 
     <form action="{{ route('AddVaccine') }}" method="POST" enctype="multipart/form-data">
-        
+        @csrf
 
         <div class="pb-3">
             <label for="name">Vaccine Name</label>

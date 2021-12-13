@@ -2,7 +2,7 @@
 
 @section('isi')
 
-    <h1 class="text-center p-5">Register {{ $vaccines name }} Patient</h1>
+    <h1 class="text-center p-5">Register {{ $vaccines->name }} Patient</h1>
 
     <form action="{{ route('AddDetail') }}" method="POST" enctype="multipart/form-data">
         @csrf
