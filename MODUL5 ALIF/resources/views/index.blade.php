@@ -12,6 +12,4 @@
             Dengan mendpatkan vaksin, kamu juga akan membantu melindungi orang-orang di sekitar dari cirus corona. Terutama orang-orang yang berisiko tinggi terkena penyakit parah akibat COVID-19.
         </p>
     </div>
-
-    <h1>home</h1>
 @endsection
